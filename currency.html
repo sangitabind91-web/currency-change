@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 10px;
+            margin: 100px;
+            background: url("https://www.nevistas.com/ul/4/2022/11/29/18.jpg");
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+          .bg-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        filter: brightness(0.5);
+        }
+
+        h2{
+            width: 300px;
+            background-color: rgb(159, 241, 221);
+            margin-left: 400px;
+        }
+        style,input,button{
+            background-color: rgb(217, 190, 243);
+            margin: 5px;
+            padding: 8px;
+            font-size: 16px;
+            box-shadow: 0 0 5px maroon;
+            border-radius: 5px;
+        }
+        result{
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            
+
+        }
+        p{
+            font-size: larger;
+            
+        }
+        
+    </style>
+</head>
+<body>
+   <h2>&#128177;Currency Converter</h2>
+    <input type="number" id="amount" placeholder="Enter Amount"><p> &#128071;</p>
+    <select id="fromCurrency">
+        <option value="INR">INR</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        
+    </select>
+    <select id="toCurrency">
+        <option value="INR">INR</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+    </select>
+    <button id="convertBtn">Convert</button><P> &#128071;</P>
+    <div id="result"></div>
+
+      <video autoplay muted loop class="bg-video">
+    <source src="money.mp4" type="video/mp4">
+
+    <script src="currency.js"></script>
+</body>
+</html>
